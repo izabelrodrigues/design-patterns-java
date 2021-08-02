@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.izabelrodrigues.loja;
+package br.com.izabelrodrigues.loja.orcamento;
 
 import java.math.BigDecimal;
 
