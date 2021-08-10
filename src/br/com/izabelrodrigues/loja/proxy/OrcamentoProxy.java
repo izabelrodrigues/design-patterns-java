@@ -9,7 +9,7 @@ import java.math.BigDecimal;
  * @author Izabel Rodrigues
  *
  */
-public class OrcamentoProxy extends Orcamento {
+public class OrcamentoProxy implements Orcavel {
 
 	private BigDecimal valor;
 	private Orcamento orcamento;
