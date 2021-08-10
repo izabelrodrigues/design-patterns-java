@@ -1,7 +1,7 @@
 /**
  *
  */
-package br.com.izabelrodrigues.loja.composite;
+package br.com.izabelrodrigues.loja.proxy;
 
 import java.math.BigDecimal;
 

@@ -11,7 +11,7 @@ import java.math.BigDecimal;
  * @author Izabel Rodrigues
  *
  */
-public class TesteDescontosComposite {
+public class TesteComposite {
 
 	public static void main(String[] args) {
 
@@ -23,9 +23,19 @@ public class TesteDescontosComposite {
 		orcamentoNovo.adicionarItem(new ItemOrcamento(new BigDecimal(500)));
 		orcamentoNovo.adicionarItem(orcamentoAntigo);
 
-		CalculadoraDeDescontos calculadora = new CalculadoraDeDescontos();
-		System.out.println(calculadora.calcular(orcamentoNovo));
+		calcularDesconto(orcamentoNovo);
 
+		calcularValorOrcamento(orcamentoNovo);
+
+	}
+
+	private static void calcularValorOrcamento(Orcamento orcamentoNovo) {
+		System.out.println("Valor do orçamento com Composite:" + orcamentoNovo.getValor());
+	}
+
+	private static void calcularDesconto(Orcamento orcamentoNovo) {
+		CalculadoraDeDescontos calculadora = new CalculadoraDeDescontos();
+		System.out.println("DESCONTO USANDO COMPOSITE: " + calculadora.calcular(orcamentoNovo));
 	}
 
 }
